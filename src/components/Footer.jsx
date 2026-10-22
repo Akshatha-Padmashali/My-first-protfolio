@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Heart, FileDown, Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowUp, Heart, FileDown, Mail, Phone, MapPin, Github } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Footer() {
@@ -59,6 +59,22 @@ export default function Footer() {
                   <span>Resume (PDF)</span>
                 </a>
               </li>
+              {personalInfo.github && (
+                <li>
+                  <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="footer-resume-link">
+                    <Github size={14} />
+                    <span>GitHub Profile</span>
+                  </a>
+                </li>
+              )}
+              {personalInfo.githubRepo && (
+                <li>
+                  <a href={personalInfo.githubRepo} target="_blank" rel="noopener noreferrer" className="footer-resume-link">
+                    <Github size={14} />
+                    <span>Source Repository</span>
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>

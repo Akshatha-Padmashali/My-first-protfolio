@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, FileDown, Sparkles } from 'lucide-react';
+import { Menu, X, FileDown, Sparkles, Github } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const navLinks = [
@@ -81,8 +81,22 @@ export default function Navbar() {
           </ul>
         </nav>
 
-        {/* Actions (Resume & Mobile Toggle) */}
+        {/* Actions (Resume, GitHub & Mobile Toggle) */}
         <div className="navbar-actions">
+          {personalInfo.github && (
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary btn-sm nav-github-btn"
+              title="View GitHub Profile"
+              aria-label="GitHub Profile"
+            >
+              <Github size={16} />
+              <span className="desktop-only-text">GitHub</span>
+            </a>
+          )}
+
           <a
             href={personalInfo.resumePath}
             target="_blank"

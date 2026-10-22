@@ -4,6 +4,8 @@ export const personalInfo = {
   location: "Mangaluru, Karnataka, India",
   phone: "+91-7338143157",
   email: "akshathapadmashali19@gmail.com",
+  github: "https://github.com/Akshatha-Padmashali",
+  githubRepo: "https://github.com/Akshatha-Padmashali/My-first-protfolio",
   resumePath: "/Akshatha_Padmashali_Resume.pdf",
   careerObjective:
     "Motivated Artificial Intelligence and Machine Learning engineering student seeking an opportunity to apply technical knowledge, strengthen practical skills, learn from experienced professionals, and contribute effectively to the growth of the organization.",

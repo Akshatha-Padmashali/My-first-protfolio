@@ -9,7 +9,8 @@ import {
   Award, 
   BookOpen, 
   Languages as LanguagesIcon,
-  Sparkles
+  Sparkles,
+  Github
 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
@@ -75,6 +76,19 @@ export default function Hero() {
               <FileDown size={18} />
               <span>Resume PDF</span>
             </a>
+
+            {personalInfo.github && (
+              <a
+                href={personalInfo.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+                title="View GitHub Profile"
+              >
+                <Github size={18} />
+                <span>GitHub</span>
+              </a>
+            )}
           </div>
         </div>
 
